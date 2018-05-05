@@ -1,0 +1,19 @@
+                    ACM 图论
+
+一、并查集
+   递归算法：
+   1.将每个元素初始化，自身作为父节点。
+      int init(int n){
+         for(int i = 1; i <= n; i++) fa[i] = i;}
+   2.查找父节点：
+      int findd(int x){
+          return fa[x] == x ? x :fa[x] = findd(fa[x]);}
+   3.合并：
+      void unionn( ){
+           int fx = find(x);
+           int fy = find(y);
+           if(fx != fy) fa[fx] = fy;}
+
+
+   
+
